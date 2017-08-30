@@ -23,45 +23,56 @@ export default () => (
 
       <div className='main-form'>
         <div className='form-query'>
+          blank
+        </div>
+      </div>
 
+      <div className='main-action'>
+        <div className='action-row'>
+
+          <div className='action-item' title='点击上传文件'>
+            <div className='action-box'>
+              <div className='action-image'>
+                <img src='static/images/database.svg'/>
+              </div>
+
+              <div className='action-info'>
+                <div className='name'>IP库文件</div>
+                <div className='text'>存储IP地址段对应的地理位置编码，是IP库的核心数据</div>
+              </div>
+            </div>
+          </div>
+
+          <div className='action-item' title='点击上传文件'>
+            <div className='action-box'>
+              <div className='action-image'>
+                <img src='static/images/drive.svg'/>
+              </div>
+
+              <div className='action-info'>
+                <div className='name'>地理位置文件</div>
+                <div className='text'>地理位置编码对应的简单城市名称，信息不是特别完整</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
     <style>{`
-      .main-description {
-        text-align: center;
-        color: #fff;
+      .action-info {
+        padding: 20px;
+        height: 100px;
       }
 
-      .main-desc .title, .main-desc .title>h1 {
-        text-align: center;
-        color: #fff;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-        font-size: 32px;
-        font-weight: 400;
-        text-rendering: optimizeLegibility;
-      }
-
-      .main-desc .subtitle, .main-desc .subtitle>h2 {
-        text-align: center;
-        color: #fff;
-        font-size: 12px;
+      .action-info .name {
+        font-size: 20px;
         font-weight: normal;
-        -webkit-letter-spacing: 4px;
-        -moz-letter-spacing: 4px;
-        -ms-letter-spacing: 4px;
-        letter-spacing: 4px;
-        text-transform: uppercase;
+        margin-bottom: 5px;
       }
 
-      .main-desc .content {
-        margin-bottom: 50px;
-      }
-
-      .main-desc .content, .main-desc .content>p {
+      .action-info .text {
         color: #ababab;
-        text-align: center;
         font-size: 14px;
         font-weight: normal;
         line-height: 24px;
