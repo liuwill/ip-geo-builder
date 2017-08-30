@@ -103,12 +103,17 @@ body {
 }
 
 @media screen and (max-width: 655px) {
+  .main-desc {
+    max-width: 100%;
+    padding: 20px;
+  }
+
   .action-box {
     width: 270px;
     margin-left: 10px;
     margin-right: 10px;
 
-    margin-bottom: 16px;
+    margin-bottom: 24px;
   }
 
   .action-item+.action-item {
