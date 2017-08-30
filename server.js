@@ -12,16 +12,10 @@ app.prepare().then(() => {
 
   router(server, app)
 
-  // // custom route for posts
-  // server.get('/post/:slug', (req, res) =>
-  //   app.render(req, res, '/post', {
-  //     post: req.params.slug,
-  //   })
-  // );
-  // // custom route for tags
-  // server.get('/tag/:slug', (req, res) =>
-  //   app.render(req, res, '/tag', {
-  //     tag: req.params.slug,
+  // // custom route if need
+  // server.get('/custom', (req, res) =>
+  //   app.render(req, res, '/custom', {
+  //     data: req.params.data,
   //   })
   // );
   server.get('/api/json', (req, res) => {
