@@ -1,0 +1,5 @@
+module.exports = {
+  siteTitle: 'IP to Geo',
+  description: 'Generate Geo db for find-ip-location',
+  stylesheets: ['static/css/common.css']
+}
