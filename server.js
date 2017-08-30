@@ -18,6 +18,10 @@ app.prepare().then(() => {
   //     data: req.params.data,
   //   })
   // );
+  server.get('/uploads', (req, res) => {
+    res.json({ status: 'sorry' })
+  })
+
   server.get('/api/json', (req, res) => {
     res.json({ status: 'json' })
   })

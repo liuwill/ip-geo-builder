@@ -139,3 +139,21 @@ body {
   -webkit-filter: drop-shadow(rgb(255, 255, 255) 130px 42px);
   filter: drop-shadow(rgb(255, 255, 255) 130px 42px);
 }
+
+.action-info {
+  padding: 20px;
+  height: 100px;
+}
+
+.action-info .name {
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.action-info .text {
+  color: #ababab;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+}

@@ -33,7 +33,7 @@ export default () => (
           <div className='action-item' title='点击上传文件'>
             <div className='action-box'>
               <div className='action-image'>
-                <img src='static/images/database.svg'/>
+                <img src='static/images/database.svg' />
               </div>
 
               <div className='action-info'>
@@ -46,7 +46,7 @@ export default () => (
           <div className='action-item' title='点击上传文件'>
             <div className='action-box'>
               <div className='action-image'>
-                <img src='static/images/drive.svg'/>
+                <img src='static/images/drive.svg' />
               </div>
 
               <div className='action-info'>
@@ -60,23 +60,7 @@ export default () => (
     </div>
 
     <style>{`
-      .action-info {
-        padding: 20px;
-        height: 100px;
-      }
 
-      .action-info .name {
-        font-size: 20px;
-        font-weight: normal;
-        margin-bottom: 5px;
-      }
-
-      .action-info .text {
-        color: #ababab;
-        font-size: 14px;
-        font-weight: normal;
-        line-height: 24px;
-      }
     `}</style>
   </div>
 )
