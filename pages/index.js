@@ -4,7 +4,7 @@ import BaseConfig from '../config/base'
 
 export default () => (
   <div className='app-body'>
-    <Header siteTitle={BaseConfig.siteTitle} description={BaseConfig.description} stylesheets={BaseConfig.stylesheets} scripts={BaseConfig.scripts}/>
+    <Header siteTitle={BaseConfig.siteTitle} description={BaseConfig.description} stylesheets={BaseConfig.stylesheets} scripts={BaseConfig.scripts} />
 
     <div className='main-container'>
       <div className='main-desc'>
