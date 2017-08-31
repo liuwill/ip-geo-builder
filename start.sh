@@ -2,6 +2,11 @@
 env_str=""
 env_line=""
 
+if [ ! -f ".env" ];then
+  echo "配置文件不存在"
+  exit 1
+fi
+
 for line in $(cat .env)
 do
   if [ -z "$env_str" ];then
@@ -15,8 +20,6 @@ do
     export "$line"
   fi
 done
-
-# source .env
 
 if [ ! -n "$env_str" ]; then
   echo "环境变量加载失败"
