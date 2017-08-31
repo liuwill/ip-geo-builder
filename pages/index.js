@@ -22,17 +22,19 @@ export default () => (
       </div>
 
       <div className='main-form'>
-        <div className='form-query'>
+        <form className='form-query'>
           <div className='form-input'>
             <input className='form-data trigger' name='filename' type='text' autoCorrect='off' autoCapitalize='off' placeholder='target file name' />
           </div>
-        </div>
+          <input className='form-data upload hidden' type='file' name='core' />
+          <input className='form-data upload hidden' type='file' name='geo' />
+        </form>
       </div>
 
       <div className='main-action'>
         <div className='action-row'>
 
-          <div className='action-item upload core' title='点击上传文件'>
+          <div className='action-item upload core' name='core' title='点击上传文件'>
             <div className='action-box'>
               <div className='action-image'>
                 <img src='static/images/database.svg' />
@@ -47,12 +49,10 @@ export default () => (
                   <div className='size'>0</div>
                 </div>
               </div>
-
-              <input className='form-data upload hidden' type='file' name='core' />
             </div>
           </div>
 
-          <div className='action-item upload geo' title='点击上传文件'>
+          <div className='action-item upload geo' name='geo' title='点击上传文件'>
             <div className='action-box'>
               <div className='action-image'>
                 <img src='static/images/drive.svg' />
@@ -67,8 +67,6 @@ export default () => (
                   <div className='size'>0</div>
                 </div>
               </div>
-
-              <input className='form-data upload hidden' type='file' name='geo' />
             </div>
           </div>
         </div>
