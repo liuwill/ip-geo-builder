@@ -23,14 +23,16 @@ export default () => (
 
       <div className='main-form'>
         <div className='form-query'>
-          blank
+          <div className='form-input'>
+            <input className='form-data trigger' name='filename' type='text' autoCorrect='off' autoCapitalize='off' placeholder='target file name' />
+          </div>
         </div>
       </div>
 
       <div className='main-action'>
         <div className='action-row'>
 
-          <div className='action-item' title='点击上传文件'>
+          <div className='action-item upload core' title='点击上传文件'>
             <div className='action-box'>
               <div className='action-image'>
                 <img src='static/images/database.svg' />
@@ -39,11 +41,18 @@ export default () => (
               <div className='action-info'>
                 <div className='name'>IP库文件</div>
                 <div className='text'>存储IP地址段对应的地理位置编码，是IP库的核心数据</div>
+
+                <div className='action-more'>
+                  <div className='status'>点击上传</div>
+                  <div className='size'>0</div>
+                </div>
               </div>
+
+              <input className='form-data upload hidden' type='file' name='core' />
             </div>
           </div>
 
-          <div className='action-item' title='点击上传文件'>
+          <div className='action-item upload geo' title='点击上传文件'>
             <div className='action-box'>
               <div className='action-image'>
                 <img src='static/images/drive.svg' />
@@ -52,7 +61,14 @@ export default () => (
               <div className='action-info'>
                 <div className='name'>地理位置文件</div>
                 <div className='text'>地理位置编码对应的简单城市名称，信息不是特别完整</div>
+
+                <div className='action-more'>
+                  <div className='status'>点击上传</div>
+                  <div className='size'>0</div>
+                </div>
               </div>
+
+              <input className='form-data upload hidden' type='file' name='geo' />
             </div>
           </div>
         </div>
@@ -60,7 +76,54 @@ export default () => (
     </div>
 
     <style>{`
+      .form-query {
+        text-align: center;
+        max-width: 270px;
+        margin: auto;
+        margin-bottom: 24px;
+        border-bottom: 2px solid #626262;
+        -webkit-transition: border-bottom-color 100ms ease-in, color 100ms ease-in;
+        -moz-transition: border-bottom-color 100ms ease-in, color 100ms ease-in;
+        -ms-transition: border-bottom-color 100ms ease-in, color 100ms ease-in;
+        transition: border-bottom-color 100ms ease-in, color 100ms ease-in;
+      }
 
+      .form-query.focus {
+        border-bottom-color: #fff;
+      }
+
+      .form-input {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        height: 32px;
+        line-height: 32px;
+      }
+
+      .form-input input {
+        border: none;
+        background-color: transparent;
+        color: #ffffff;
+        max-width: 270px;
+        display: block;
+        text-align: center;
+        font-size: 12px;
+        font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+        border-radius: 0;
+        padding: 0;
+        margin: 0 auto;
+        height: 32px;
+        line-height: 22px;
+      }
+
+      .form-input input:focus {
+        outline: none;
+        color: #fff;
+      }
+
+      .form-input input:focus::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+        color:    #fff;
+      }
     `}</style>
   </div>
 )

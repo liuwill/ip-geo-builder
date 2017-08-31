@@ -162,3 +162,28 @@ body {
   font-weight: normal;
   line-height: 24px;
 }
+
+.action-more {
+  padding: 10px 0 0 0;
+}
+
+.action-more .status {
+  display: inline-block;
+  text-align: left;
+  font-size: 12px;
+  font-weight: normal;
+  overflow: auto;
+}
+
+.action-more .size {
+  display: inline-block;
+  float: right;
+  text-align: right;
+  font-size: 12px;
+  font-weight: normal;
+  overflow: auto;
+}
+
+.hidden {
+  display: none;
+}
