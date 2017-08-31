@@ -21,13 +21,18 @@ export default () => (
         </div>
       </div>
 
+      <div className='tip-box'>
+        choose your files and input filename, then type enter.
+      </div>
+
       <div className='main-form'>
-        <form className='form-query'>
+        <form className='form-query geo-ip-form' target='__blank' action='api/upload.do' method='post' encType='multipart/form-data'>
           <div className='form-input'>
-            <input className='form-data trigger' name='filename' type='text' autoCorrect='off' autoCapitalize='off' placeholder='target file name' />
+            <input className='form-data trigger' name='filename' type='text' autoCorrect='off' autoCapitalize='off' placeholder='file name' />
           </div>
           <input className='form-data upload hidden' type='file' name='core' />
           <input className='form-data upload hidden' type='file' name='geo' />
+          <input className='hidden' name='hidden' type='text' />
         </form>
       </div>
 
@@ -121,6 +126,20 @@ export default () => (
 
       .form-input input:focus::-webkit-input-placeholder { /* WebKit, Blink, Edge */
         color:    #fff;
+      }
+
+      .tip-box {
+        border: 1px solid #333;
+        padding: 20px;
+        max-width: 540px;
+        margin: auto;
+        margin-bottom: 40px;
+        margin-top: 40px;
+        white-space: pre-wrap;
+
+        color: #5ce6cd;
+        font-size: 12px;
+        text-align: center;
       }
     `}</style>
   </div>

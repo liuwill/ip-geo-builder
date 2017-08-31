@@ -172,7 +172,9 @@ body {
   text-align: left;
   font-size: 12px;
   font-weight: normal;
-  overflow: auto;
+  width: 90px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .action-more .size {
