@@ -6,6 +6,12 @@ export default () => (
   <div className='app-body'>
     <Header siteTitle={BaseConfig.siteTitle} description={BaseConfig.description} stylesheets={BaseConfig.stylesheets} scripts={BaseConfig.scripts} />
 
+    <div className='top-banner'>
+      <div className='announce'>
+        You can click <a target='__blank' href='https://github.com/liuwill/find-ip-location'>here</a> to visit GitHub repository.
+      </div>
+    </div>
+
     <div className='main-container'>
       <div className='main-desc'>
         <div className='title'>
@@ -140,6 +146,23 @@ export default () => (
         color: #5ce6cd;
         font-size: 12px;
         text-align: center;
+      }
+
+      .top-banner {
+        text-align: center;
+        background: #111111;
+        color: #cccccc;
+      }
+
+      .top-banner .announce{
+        padding: 15px;
+        font-size: 12px;
+        border-bottom: 1px solid #333333;
+      }
+
+      .top-banner .announce a {
+        text-decoration: none;
+        color: #fff;
       }
     `}</style>
   </div>
