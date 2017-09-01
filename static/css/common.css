@@ -99,7 +99,22 @@ body {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 
+  cursor: pointer;
   margin-bottom: 10px;
+
+  -webkit-transition: border-color 300ms ease-in, color 100ms ease-in;
+  -moz-transition: border-color 300ms ease-in, color 100ms ease-in;
+  -ms-transition: border-color 300ms ease-in, color 100ms ease-in;
+  transition: border-color 300ms ease-in, color 100ms ease-in;
+  transition-timing-function: ease-in;
+}
+
+.action-box:hover, .action-box.selected{
+  border: 1px solid #fff;
+}
+
+.action-box.error, .action-box.error:hover {
+  border: 1px solid #ff5e55;
 }
 
 @media screen and (max-width: 655px) {
@@ -126,11 +141,6 @@ body {
     -ms-flex-pack: center;
     justify-content: center;
   }
-}
-
-.action-box:hover {
-  cursor: pointer;
-  border: 1px solid #fff;
 }
 
 .action-image {
