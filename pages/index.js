@@ -34,7 +34,7 @@ export default () => (
       <div className='main-form'>
         <form className='form-query geo-ip-form' target='__blank' action='api/upload.do' method='post' encType='multipart/form-data'>
           <div className='form-input'>
-            <input className='form-data trigger' name='filename' type='text' autoCorrect='off' autoCapitalize='off' placeholder='file name' />
+            <input className='form-data trigger' name='filename' type='text' autoCorrect='off' autoCapitalize='off' autoComplete='off' placeholder='file name' />
           </div>
           <input className='form-data upload hidden' type='file' name='core' />
           <input className='form-data upload hidden' type='file' name='geo' />
