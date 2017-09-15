@@ -6,3 +6,6 @@ install:
 
 check:
 	npm run lint
+
+start:
+	./start.sh
