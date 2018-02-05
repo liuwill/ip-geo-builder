@@ -8,6 +8,8 @@ const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev })
 const handle = app.getRequestHandler()
 
+const serverPort = process.env.SERVER_PORT || 3000
+
 app.prepare().then(() => {
   const server = express()
 
@@ -30,10 +32,10 @@ app.prepare().then(() => {
 
   server.get('*', (req, res) => handle(req, res))
 
-  server.listen(3000, err => {
+  server.listen(serverPort, err => {
     if (err) {
       throw err
     }
-    console.log('> Ready on http://localhost:3000') // eslint-disable-line no-console
+    console.log(`> Ready on http://localhost:${serverPort}`) // eslint-disable-line no-console
   })
 })
