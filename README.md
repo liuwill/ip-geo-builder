@@ -20,7 +20,7 @@ now ln https://ip2geo-random.now.sh find-ip-location
 ```
 
 ### 环境配置
-.env & app.json & 相关联的文件，在coding对象项目中
+.env & app.json & 相关联的文件，在coding项目中
 * ip2geo-next
 * geo-ip-data
 * ip-location-parser
